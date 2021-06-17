@@ -18,6 +18,9 @@ This work is distributed without any warranty.
 * `optimizer.h` – C header file for the DLL wrapper
 
 # Compilation
+
+The DLL can be compiled using Visual Studio. Tests can be compiled using GNU C++ compiler (g++).
+
 ## Visual Studio
 To compile for use in Python, create a DLL project in Visual Studio and add existing items:
 
@@ -33,7 +36,7 @@ Build... Configuration manager... choose the appropriate configuration for your 
 * Use C++ Language Standard option `Default` or at least: `/std:c++17`
 * Preferably use an appropriate Enable Enhanced Instruction Set option for your computer: `/arch:SSE2`
 
-## G++
+## g++
 To compile for testing:
 
 `g++ genetic_algorithm_own_test.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o test`
