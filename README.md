@@ -4,9 +4,9 @@ Genetic algorithm for assembly line sequencing
 # compiling
 To compile for use in Python, create a DLL project in Visual Studio and add existing items:
 
-optimize.cpp
-optimize.h
-genetic_algorithm_own.h
+* optimize.cpp
+* optimize.h
+* genetic_algorithm_own.h
 
 Build... Configuration manager... choose the appropriate configuration for your computer:
 Active solution platform: x64
