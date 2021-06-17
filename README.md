@@ -1,5 +1,14 @@
 # assembly-line-sequencing-ga
-Genetic algorithm for assembly line sequencing
+Genetic algorithm optimizer library for the open loop, fixed starting point traveling salesman problem.
+
+# Authors
+Based on a Python version written in 2020 by Genrikh Ekkerman, Häme University of Applied Sciences.
+C++ version written in 2020 by Olli Niemitalo, Häme University of Applied Sciences.
+ 
+# License
+This work is licensed under the Creative Commons CC0 1.0 Universal License/Waiver: https://creativecommons.org/publicdomain/zero/1.0/
+To the extent possible under law, the authors and Häme University of Applied Sciences have waived all copyright and related or neighboring rights to this work.
+This work is distributed without any warranty.
 
 # Compilation
 ## Visual Studio
