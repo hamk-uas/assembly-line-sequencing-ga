@@ -10,6 +10,13 @@ This work is licensed under the Creative Commons CC0 1.0 Universal License/Waive
 To the extent possible under law, the authors and Häme University of Applied Sciences have waived all copyright and related or neighboring rights to this work.
 This work is distributed without any warranty.
 
+# Files
+
+* `genetic_algorithm_own.h` – C++ header-only optimizer library, contains the genetic algorithm implementation
+* `genetic_algorithm_own_test.cpp` – A C++ program for testing the optimizer
+* `optimizer.cpp` – C++ source code for the C calling convention DLL wrapper for the optimizer
+* `optimizer.h` – C header file for the DLL wrapper
+
 # Compilation
 ## Visual Studio
 To compile for use in Python, create a DLL project in Visual Studio and add existing items:
@@ -30,3 +37,7 @@ Build... Configuration manager... choose the appropriate configuration for your 
 To compile for testing:
 
 `g++ genetic_algorithm_own_test.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o test`
+
+To compile as DLL (if this does not work, try Visual Studio):
+
+TODO
