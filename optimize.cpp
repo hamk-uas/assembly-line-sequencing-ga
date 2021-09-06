@@ -8,7 +8,10 @@
 // To the extent possible under law, the authors and Häme University of Applied Sciences have waived all copyright and related or neighboring rights to this work.
 // This work is distributed without any warranty.
 
+#ifdef _MSC_VER
 #include "pch.h"
+#endif
+
 #include "optimize.h"
 #include "genetic_algorithm_own.h"
 
