@@ -1,5 +1,5 @@
 # assembly-line-sequencing-ga
-Genetic algorithm optimizer library for the open loop, fixed starting point traveling salesman problem.
+Genetic algorithm optimizer library for the open loop, fixed starting point traveling salesman problem. Written in C++ and can be compiled to a DLL to be used in Python.
 
 # Authors
 Based on a Python version written in 2020 by Genrikh Ekkerman, Häme University of Applied Sciences.
@@ -16,6 +16,7 @@ This work is distributed without any warranty.
 * `genetic_algorithm_own_test.cpp` – A C++ program for testing the optimizer
 * `optimizer.cpp` – C++ source code for the C calling convention DLL wrapper for the optimizer
 * `optimizer.h` – C header file for the DLL wrapper
+* `data_generation.py` – Python interfacing example with assembly line sequencing test runs
 
 # Compilation
 
@@ -40,6 +41,19 @@ To compile for testing:
 
 `g++ genetic_algorithm_own_test.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o test`
 
-To compile as DLL (if this does not work, try Visual Studio):
+Note that you need to provide your own distance matrix data file.
 
-TODO
+To compile and build as DLL:
+
+```
+g++ -c optimize.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o optimize.o
+g++ -shared -o c_optimizer_x64.dll -static-libstdc++ -fopenmp optimize.o
+```
+
+ If this does not work, try Visual Studio.
+
+## Python
+
+Once you have a 64-bit DLL built as `c_optimizer_x64.dll`, you can run a test suite of assembly line sequencing optimization runs:
+
+`python data_generation.py`
