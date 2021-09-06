@@ -41,8 +41,11 @@ To compile for testing:
 
 `g++ genetic_algorithm_own_test.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o test`
 
-To compile as DLL (if this does not work, try Visual Studio):
+Note that you need to provide your own distance matrix data file.
+
+To compile as DLL:
 
 `g++ -c optimize.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o optimize.o`
 `g++ -shared -o c_optimizer_x64.dll -static-libstdc++ -fopenmp optimize.o`
 
+ If this does not work, try Visual Studio.
