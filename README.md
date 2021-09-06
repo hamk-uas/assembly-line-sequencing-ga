@@ -43,7 +43,7 @@ To compile for testing:
 
 Note that you need to provide your own distance matrix data file.
 
-To compile as DLL:
+To compile and build as DLL:
 
 ```
 g++ -c optimize.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o optimize.o
@@ -51,3 +51,9 @@ g++ -shared -o c_optimizer_x64.dll -static-libstdc++ -fopenmp optimize.o
 ```
 
  If this does not work, try Visual Studio.
+
+## Python
+
+Once you have a 64-bit DLL built as `c_optimizer_x64.dll`, you can run a test suite of assembly line sequencing optimization runs:
+
+`python data_generation.py`
