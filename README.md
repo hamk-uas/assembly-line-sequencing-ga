@@ -43,7 +43,7 @@ To compile for testing:
 
 Note that you need to provide your own distance matrix data file.
 
-To compile and build as DLL:
+To compile and build as DLL for use in Python:
 
 ```
 g++ -c optimize.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o optimize.o
