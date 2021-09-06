@@ -1,5 +1,5 @@
 # assembly-line-sequencing-ga
-Genetic algorithm optimizer library for the open loop, fixed starting point traveling salesman problem.
+Genetic algorithm optimizer library for the open loop, fixed starting point traveling salesman problem. Written in C++ and can be compiled to a DLL to be used in Python.
 
 # Authors
 Based on a Python version written in 2020 by Genrikh Ekkerman, Häme University of Applied Sciences.
