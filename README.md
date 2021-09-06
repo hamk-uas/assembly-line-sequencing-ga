@@ -16,6 +16,7 @@ This work is distributed without any warranty.
 * `genetic_algorithm_own_test.cpp` – A C++ program for testing the optimizer
 * `optimizer.cpp` – C++ source code for the C calling convention DLL wrapper for the optimizer
 * `optimizer.h` – C header file for the DLL wrapper
+* `data_generation.py` – Python interfacing example with assembly line sequencing test runs
 
 # Compilation
 
@@ -42,4 +43,6 @@ To compile for testing:
 
 To compile as DLL (if this does not work, try Visual Studio):
 
-TODO
+`g++ -c optimize.cpp -std=c++17 -march=native -I. -O3 -ffast-math -fopenmp -o optimize.o`
+`g++ -shared -o c_optimizer_x64.dll -static-libstdc++ -fopenmp optimize.o`
+
