@@ -20,7 +20,7 @@ This work is distributed without any warranty.
 
 # Compilation
 
-The DLL can be compiled using Visual Studio. Tests can be compiled using GNU C++ compiler (g++).
+The DLL can be compiled using Visual Studio or GNU C++ compiler (g++). Tests can be compiled using g++.
 
 ## Visual Studio
 To compile for use in Python, create a DLL project in Visual Studio and add existing items:
